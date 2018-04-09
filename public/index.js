@@ -1,24 +1,24 @@
-// display("cyril")
-//
-function display(name) {
-//     for (var i = 0; i < 28; i++) {
-//         console.log('coucou');
-//         document.getElementById( "img_" + i).src = name + "/" + i + ".png";
-//     }
-// }
+var NB_IMAGES = 28;
+var sizeW = "398px";
+var sizeH = "398px";
 
-// for (var i = 0; i < 28; i++) {
-//     var name = "cyril";
-//     console.log('coucou');
-//     document.getElementById( "img_" + i).src = name + "/" + i + ".png";
-// }
+var NAMES = ["cyril", "agnes", "guillaume", "antoine", "anne-claire", "cedric", "yann", "louis"];
 
+function display() {
 
-    // document.addEventListener("DOMContentLoaded", function (event) {
-        for (var i = 1; i < 5; i++) {
-            // var name = "cyril";
-            document.getElementById("img_" + i).src = name + "/" + i + ".png";
-        }
-    // });
+    var name = NAMES[Math.floor(Math.random() * 8)];
+
+    var div = document.getElementById("images");
+    for (var i = 1; i <= NB_IMAGES; i++) {
+        var newDiv = document.createElement('div');
+        newDiv.style.width = sizeW;
+        newDiv.style.height = sizeH;
+
+        var img = document.createElement('img');
+        img.src = name + "/" + i + ".png";
+
+        newDiv.appendChild(img);
+        div.appendChild(newDiv);
+    }
 
 }

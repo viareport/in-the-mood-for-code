@@ -2,174 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4478dfa6-d05b-40c0-b61b-ab2f7818f72e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/10.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/11.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/12.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/13.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/14.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/15.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/16.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/17.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/18.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/19.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/20.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/21.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/22.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/23.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/24.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/25.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/26.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/27.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/28.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/8.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/agnes/9.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/10.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/11.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/12.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/13.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/14.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/15.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/16.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/17.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/18.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/19.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/20.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/21.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/22.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/23.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/24.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/25.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/26.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/27.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/28.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/8.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/anne-claire/9.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/10.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/11.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/12.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/13.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/14.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/15.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/16.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/17.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/18.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/19.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/20.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/21.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/22.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/23.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/24.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/25.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/26.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/27.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/28.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/8.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/antoine/9.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/10.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/11.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/12.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/13.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/14.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/15.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/16.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/17.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/18.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/19.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/20.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/21.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/22.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/23.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/24.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/25.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/26.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/27.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/28.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/8.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cedric/9.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/10.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/11.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/12.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/13.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/14.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/15.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/16.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/17.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/18.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/19.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/20.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/21.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/22.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/23.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/24.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/25.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/26.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/27.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/28.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/8.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/cyril/9.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/1.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/10.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/11.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/12.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/13.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/14.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/15.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/16.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/17.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/18.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/19.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/2.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/20.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/21.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/22.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/23.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/24.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/25.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/26.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/27.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/28.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/4.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/5.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/6.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/7.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/8.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/images/guillaume/9.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
+      <change beforePath="$PROJECT_DIR$/public/index.js" afterPath="$PROJECT_DIR$/public/index.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -183,24 +18,9 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Copie de README (conflit du 09-04-2018 à 17h05).md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Copie de README (conflit du 09-04-2018 à 17h05).md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="0">
-                <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="120">
+              <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -208,14 +28,19 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="48" column="62" lean-forward="true" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="480">
+              <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -246,8 +71,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/index.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -286,11 +112,6 @@
             <path>
               <item name="in-the-mood-for-code" type="b2602c69:ProjectViewProjectNode" />
               <item name="in-the-mood-for-code" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="in-the-mood-for-code" type="b2602c69:ProjectViewProjectNode" />
-              <item name="in-the-mood-for-code" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -416,16 +237,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1523285872851</updated>
-      <workItem from="1523285874214" duration="716000" />
+      <workItem from="1523285874214" duration="2591000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="716000" />
+    <option name="totallyTimeSpent" value="2591000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="845" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -439,7 +259,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -477,29 +297,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="48" column="62" lean-forward="true" selection-start-line="48" selection-start-column="62" selection-end-line="48" selection-end-column="62" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Copie de README (conflit du 09-04-2018 à 17h05).md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -508,6 +305,30 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="20" lean-forward="false" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="0" lean-forward="true" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

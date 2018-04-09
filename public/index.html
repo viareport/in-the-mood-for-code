@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mood</title>
+</head>
+
+<body>
+<h3>Quelle humeur aujourd'hui ?</h3>
+<br />
+
+<style>
+    .flex {
+        display: flex;
+    }
+    .flexWrap {
+        flex-wrap: wrap;
+    }
+    .spaceBetween {
+        justify-content: space-between;
+    }
+</style>
+
+<div class="flex spaceBetween flexWrap">
+
+    <div style="width: 398px; height: 398px;">
+        <img class="card-img-top" id="img_1">
+    </div>
+
+    <div style="width: 398px; height: 398px;">
+        <img class="card-img-top" id="img_2">
+    </div>
+
+    <div style="width: 398px; height: 398px;">
+        <img class="card-img-top" id="img_3">
+    </div>
+
+    <div style="width: 398px; height: 398px;">
+        <img class="card-img-top" id="img_4">
+    </div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<!--<script type="text/javascript" src="index.js"></script>-->
+<script>
+    document.addEventListener("DOMContentLoaded", function (event) {
+        var name = "guillaume";
+        for (var i = 1; i < 5; i++) {
+            document.getElementById( "img_" + i).src = name + "/" + i + ".png";
+        }
+    });
+</script>
+
+</body>
+</html>

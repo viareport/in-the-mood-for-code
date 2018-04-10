@@ -4,31 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <title>Mood</title>
+    <script type="text/javascript" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="themes/easydropdown.css"/>
+    <style>
+        .flex {
+            display: flex;
+        }
+        .flexWrap {
+            flex-wrap: wrap;
+        }
+        .spaceBetween {
+            justify-content: center;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+        }
+
+        .comboContrainer {
+            display: inline-flex;
+        }
+
+        .avatar {
+            -moz-border-radius: 45px;
+            -webkit-border-radius: 45px;
+            border-radius: 45px;
+            box-shadow: 1px 1px 11px #330033;
+            width: 150px;
+            height: 150px;
+        }
+
+        .avatarHumeur {
+            margin-left: 300px;
+        }
+
+    </style>
 </head>
 
 <body>
-<h3>Quelle humeur aujourd'hui ?</h3>
-<br />
 
-<style>
-    .flex {
-        display: flex;
-    }
-    .flexWrap {
-        flex-wrap: wrap;
-    }
-    .spaceBetween {
-        justify-content: space-between;
-    }
-</style>
+<div  class="comboContrainer">
+    <div class="comboContrainer">
+        <h3>Qui es-tu ?</h3>
+        <div class="styled-select blue rounded capitalize">
+            <select id="users" class="capitalize" >
+            </select>
+        </div>
+    </div>
+    <div class="avatarHumeur" id="user_humeur" ></div>
+</div>
+
+<h3 >
+    <span id="name" class="capitalize"></span>comment te sens-tu ? &nbsp;<span style="color: red" id="humeur_label"></span>
+</h3>
+
+<div class="comboContrainer">
+    <h3>Je suis </h3>
+    <div class="styled-select blue rounded capitalize">
+        <select id="humeurs" class="capitalize" >
+            <option value="none"> < choisir > </option>
+            <option value="positive"> de bonne humeur</option>
+            <option value="negative">de mauvaise humeur</option>
+            <option value="neutre">ni de bonne, ni de mauvaise humeur</option>
+        </select>
+    </div>
+</div>
+<br />
 
 <div class="flex spaceBetween flexWrap" id="images"/>
 
-<script type="text/javascript" src="index.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function (event) {
         display();
     });
+
+    var users = document.getElementById("users");
+
+    users.addEventListener("DOMContentLoaded", function (event) {
+        initUsers(users);
+    });
+
+    users.addEventListener("change", function(event) {
+        selectUsers(users.value)
+    });
+
+    var humeurs = document.getElementById("humeurs");
+
+    humeurs.addEventListener("change", function(event) {
+        selectHumeurGroup(humeurs.value)
+    });
+
+
 </script>
 
 </body>

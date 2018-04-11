@@ -2,57 +2,59 @@ var NB_IMAGES = 28;
 var sizeW = "150px";
 var sizeH = "150px";
 
-var NAMES = [ "cyril", "agnes", "guillaume", "antoine", "anne-claire", "cedric", "yann", "louis", "benoit"].sort();
+var NAMES = ["cyril", "agnes", "guillaume", "antoine", "anne-claire", "cedric", "yann", "louis", "benoit"].sort();
 
 var categorieHumeur = {
     positive: {
-        1:"Satisfait",
-        3:"Motivé",
-        5:"Joyeux",
-        14:"Créative",
-        22:"Enjoué",
-        23:"Heroïque",
-        24:"Warrior",
-        27:"Illuminé"
+        1: "Satisfait",
+        3: "Motivé",
+        5: "Joyeux",
+        14: "Créative",
+        22: "Enjoué",
+        23: "Heroïque",
+        24: "Warrior",
+        27: "Illuminé"
     },
     negative: {
-        2:"Blasé",
-        4:"Exténué",
-        6:"Dépité",
-        8:"Démotivé",
-        9:"Mécontent",
-        10:"Sarcastique",
-        12:"Furax",
-        15:"Énervé",
-        16:"Triste",
-        18:"Déprimé",
-        19:"Fatigué"
+        2: "Blasé",
+        4: "Exténué",
+        6: "Dépité",
+        8: "Démotivé",
+        9: "Mécontent",
+        10: "Sarcastique",
+        12: "Furax",
+        15: "Énervé",
+        16: "Triste",
+        18: "Déprimé",
+        19: "Fatigué"
     },
     neutre: {
-        7:"Je suis malade",
-        11:"Je suis perplexe",
-        13:"Je suis concentré",
-        17:"Je suis endormi",
-        20:"Je suis vaseux",
-        21:"J’ai faim",
-        25:"Je suis affamé",
-        26:"Je me détend",
-        28:"Je suis surpris"
+        7: "Je suis malade",
+        11: "Je suis perplexe",
+        13: "Je suis concentré",
+        17: "Je suis endormi",
+        20: "Je suis vaseux",
+        21: "J’ai faim",
+        25: "Je suis affamé",
+        26: "Je me détend",
+        28: "Je suis surpris"
     }
 };
 
-var USER_SELECTED =  NAMES[0];
+var USER_SELECTED = NAMES[0];
 
 var HUMEUR = {};
 
+var HISTORY = {};
+
 function display() {
 
-   initUsers(document.getElementById("users"));
+    initUsers(document.getElementById("users"));
 
     selectUsers(USER_SELECTED);
 }
 
-function cleanHumeurImg(){
+function cleanHumeurImg() {
 
     var categorie = document.getElementById("images");
     categorie.childNodes.forEach(function (child) {
@@ -69,38 +71,35 @@ function cleanHumeurImg(){
     avatar.children = [];
 }
 
-function displayHumeurImg(){
+function displayHumeurImg() {
 
     var selectCategorie = (HUMEUR[USER_SELECTED] || {}).categorie;
 
     var images = categorieHumeur[selectCategorie];
 
     var content = document.getElementById("images");
-    content.childNodes.forEach(function (child) {
-        content.removeChild(child);
-    });
-    content.childNodes = [];
-    content.children = [];
-
+    while (content.hasChildNodes()) {
+        content.removeChild(content.firstChild);
+    }
 
     var div = document.createElement('div');
     div.className = "flex spaceBetween flexWrap";
 
-    if(images !== undefined) {
+    if (images !== undefined) {
         Object.keys(images).forEach(function (imgName, idx) {
             var newDiv = document.createElement('div');
 
             var img = document.createElement('img');
             img.className = "avatar";
             img.src = USER_SELECTED + "/" + imgName + ".png";
-            img.id = "img_"+imgName;
-            img.title = images[""+imgName];
-            img.addEventListener("click", function(event) {
+            img.id = "img_" + imgName;
+            img.title = images["" + imgName];
+            img.addEventListener("click", function (event) {
                 changeHumeur(imgName);
             });
 
             newDiv.appendChild(img);
-            div.children[idx] ? div.replaceChild(newDiv, div.children[idx]) : div.appendChild(newDiv);
+            div.appendChild(newDiv);
         });
 
         content.appendChild(div);
@@ -117,7 +116,7 @@ function initUsers(combo) {
     }
 }
 
-function selectUsers(value){
+function selectUsers(value) {
 
     cleanHumeurImg();
 
@@ -130,10 +129,11 @@ function selectUsers(value){
 
     humeurComponent.selectedIndex = 0;
 
-    changeHumeur((HUMEUR[USER_SELECTED] || {}).humeur);
+    displayHumeur((HUMEUR[USER_SELECTED] || {}).humeur);
+    displayHistory();
 }
 
-function selectHumeurGroup(value){
+function selectHumeurGroup(value) {
 
     HUMEUR[USER_SELECTED] = {
         categorie: value,
@@ -143,21 +143,51 @@ function selectHumeurGroup(value){
     displayHumeurImg();
 }
 
-function changeHumeur(value){
+function changeHumeur(value) {
 
-    if(HUMEUR[USER_SELECTED] === undefined){
+    if (HUMEUR[USER_SELECTED] === undefined) {
         HUMEUR[USER_SELECTED] = {};
     }
     HUMEUR[USER_SELECTED].humeur = value;
 
-    var content = document.getElementById("user_humeur");
-    content.childNodes.forEach(function (child) {
-        content.removeChild(child);
-    });
-    content.childNodes = [];
-    content.children = [];
+    (HISTORY[USER_SELECTED] = HISTORY[USER_SELECTED] || []).unshift(Object.assign({}, HUMEUR[USER_SELECTED]));
 
-    if(value ) {
+    displayHumeur(value);
+    displayHistory();
+}
+
+function displayHistory() {
+    console.log(HISTORY[USER_SELECTED])
+
+    var content = document.getElementById("user_histo");
+    while (content.hasChildNodes()) {
+        content.removeChild(content.firstChild);
+    }
+
+    (HISTORY[USER_SELECTED] || []).forEach(function (historyEntry, idx) {
+        var newDiv = document.createElement('div');
+        var imgDesc = categorieHumeur[historyEntry.categorie][historyEntry.humeur]
+        var img = document.createElement('img');
+        img.className = "avatar";
+        img.src = USER_SELECTED + "/" + historyEntry.humeur + ".png";
+        img.title = imgDesc;
+        img.addEventListener("click", function (event) {
+            console.log(historyEntry);
+        });
+
+        content.appendChild(img);
+    });
+
+}
+
+function displayHumeur(value) {
+
+    var content = document.getElementById("user_humeur");
+    while (content.hasChildNodes()) {
+        content.removeChild(content.firstChild);
+    }
+
+    if (value) {
 
         var img = document.createElement('img');
         img.className = "avatar";
@@ -165,11 +195,12 @@ function changeHumeur(value){
         content.appendChild(img);
 
         var humeurLabel = document.getElementById("humeur_label");
-        humeurLabel.innerHTML = categorieHumeur[HUMEUR[USER_SELECTED].categorie][""+value];
+        humeurLabel.innerHTML = categorieHumeur[HUMEUR[USER_SELECTED].categorie]["" + value];
+
     } else {
         var img = document.createElement('img');
         img.className = "avatar";
-        img.src ="themes/index.png";
+        img.src = "themes/index.png";
         content.appendChild(img);
 
         var humeurLabel = document.getElementById("humeur_label");

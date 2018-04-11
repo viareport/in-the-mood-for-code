@@ -57,18 +57,14 @@ function display() {
 function cleanHumeurImg() {
 
     var categorie = document.getElementById("images");
-    categorie.childNodes.forEach(function (child) {
-        categorie.removeChild(child);
-    });
-    categorie.childNodes = [];
-    categorie.children = [];
+    while (categorie.hasChildNodes()) {
+        categorie.removeChild(categorie.firstChild);
+    }
 
     var avatar = document.getElementById("user_humeur");
-    avatar.childNodes.forEach(function (child) {
-        avatar.removeChild(child);
-    });
-    avatar.childNodes = [];
-    avatar.children = [];
+    while (avatar.hasChildNodes()) {
+        avatar.removeChild(avatar.firstChild);
+    }
 }
 
 function displayHumeurImg() {
@@ -150,10 +146,14 @@ function changeHumeur(value) {
     }
     HUMEUR[USER_SELECTED].humeur = value;
 
-    (HISTORY[USER_SELECTED] = HISTORY[USER_SELECTED] || []).unshift(Object.assign({}, HUMEUR[USER_SELECTED]));
+    addToHistory(HUMEUR[USER_SELECTED]);
 
     displayHumeur(value);
     displayHistory();
+}
+
+function addToHistory(currentHumeur) {
+    (HISTORY[USER_SELECTED] = HISTORY[USER_SELECTED] || []).unshift(Object.assign({ date: Date.now() }, currentHumeur));
 }
 
 function displayHistory() {
@@ -166,16 +166,18 @@ function displayHistory() {
 
     (HISTORY[USER_SELECTED] || []).forEach(function (historyEntry, idx) {
         var newDiv = document.createElement('div');
+        newDiv.className = "avatarHisto-wrapper";
         var imgDesc = categorieHumeur[historyEntry.categorie][historyEntry.humeur]
         var img = document.createElement('img');
-        img.className = "avatar";
+        img.className = "avatar avatar--min";
         img.src = USER_SELECTED + "/" + historyEntry.humeur + ".png";
-        img.title = imgDesc;
-        img.addEventListener("click", function (event) {
-            console.log(historyEntry);
-        });
-
-        content.appendChild(img);
+        img.title = imgDesc + ' - ' + (new Date(historyEntry.date)).toLocaleString();
+        var label = document.createElement('span');
+        label.className = "avatarHisto-label";
+        label.innerText = (new Date(historyEntry.date)).toLocaleString();
+        newDiv.appendChild(img);
+        newDiv.appendChild(label);
+        content.appendChild(newDiv);
     });
 
 }

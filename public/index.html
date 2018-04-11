@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <title>Mood</title>
     <script type="text/javascript" src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="themes/easydropdown.css"/>
+    <link rel="stylesheet" type="text/css" href="themes/easydropdown.css" />
     <style>
         .flex {
             display: flex;
         }
+
         .flexWrap {
             flex-wrap: wrap;
         }
+
         .spaceBetween {
             justify-content: center;
         }
@@ -34,69 +36,94 @@
             height: 150px;
         }
 
+        .avatar--min {
+            width: 75px;
+            height: 75px;
+        }
+
         .avatarHumeur {
             margin-left: 300px;
         }
 
+        .avatarHisto {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .avatarHisto-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .avatarHisto-label {
+            padding-top: 5px;
+            max-width: 75px;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
 
-<div  class="comboContrainer">
     <div class="comboContrainer">
-        <h3>Qui es-tu ?</h3>
+        <div class="comboContrainer">
+            <h3>Qui es-tu ?</h3>
+            <div class="styled-select blue rounded capitalize">
+                <select id="users" class="capitalize">
+                </select>
+            </div>
+        </div>
+        <div class="comboContrainer avatarHumeur" id="user_humeur"></div>
+        <div class="comboContrainer avatarHisto" id="user_histo"></div>
+    </div>
+
+    <h3>
+        <span id="name" class="capitalize"></span>comment te sens-tu ? &nbsp;
+        <span style="color: red" id="humeur_label"></span>
+    </h3>
+
+    <div class="comboContrainer">
+        <h3>Je suis </h3>
         <div class="styled-select blue rounded capitalize">
-            <select id="users" class="capitalize" >
+            <select id="humeurs" class="capitalize">
+                <option value="none">
+                    < choisir>
+                </option>
+                <option value="positive"> de bonne humeur</option>
+                <option value="negative">de mauvaise humeur</option>
+                <option value="neutre">ni de bonne, ni de mauvaise humeur</option>
             </select>
         </div>
     </div>
-    <div class="comboContrainer avatarHumeur" id="user_humeur" ></div>
-    <div class="comboContrainer" id="user_histo" ></div>
-</div>
+    <br />
 
-<h3 >
-    <span id="name" class="capitalize"></span>comment te sens-tu ? &nbsp;<span style="color: red" id="humeur_label"></span>
-</h3>
+    <div class="flex spaceBetween flexWrap" id="images" />
 
-<div class="comboContrainer">
-    <h3>Je suis </h3>
-    <div class="styled-select blue rounded capitalize">
-        <select id="humeurs" class="capitalize" >
-            <option value="none"> < choisir > </option>
-            <option value="positive"> de bonne humeur</option>
-            <option value="negative">de mauvaise humeur</option>
-            <option value="neutre">ni de bonne, ni de mauvaise humeur</option>
-        </select>
-    </div>
-</div>
-<br />
+    <script>
+        document.addEventListener("DOMContentLoaded", function (event) {
+            display();
+        });
 
-<div class="flex spaceBetween flexWrap" id="images"/>
+        var users = document.getElementById("users");
 
-<script>
-    document.addEventListener("DOMContentLoaded", function (event) {
-        display();
-    });
+        users.addEventListener("DOMContentLoaded", function (event) {
+            initUsers(users);
+        });
 
-    var users = document.getElementById("users");
+        users.addEventListener("change", function (event) {
+            selectUsers(users.value)
+        });
 
-    users.addEventListener("DOMContentLoaded", function (event) {
-        initUsers(users);
-    });
+        var humeurs = document.getElementById("humeurs");
 
-    users.addEventListener("change", function(event) {
-        selectUsers(users.value)
-    });
-
-    var humeurs = document.getElementById("humeurs");
-
-    humeurs.addEventListener("change", function(event) {
-        selectHumeurGroup(humeurs.value)
-    });
+        humeurs.addEventListener("change", function (event) {
+            selectHumeurGroup(humeurs.value)
+        });
 
 
-</script>
+    </script>
 
 </body>
+
 </html>
